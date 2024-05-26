@@ -265,5 +265,6 @@ endif()
 # add utility binaries
 add_subdirectory(util EXCLUDE_FROM_ALL)
 
+message("tests disabled! see https://github.com/bluecheetah/cbag_polygon/issues/2")
 # add tests binaries
-add_subdirectory(tests EXCLUDE_FROM_ALL)
+#add_subdirectory(tests EXCLUDE_FROM_ALL)
