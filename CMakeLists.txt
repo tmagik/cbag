@@ -207,7 +207,10 @@ if(DEFINED ENV{OA_LINK_DIR})
 message("OA include directory: " $ENV{OA_INCLUDE_DIR})
 message("OA link directory: " $ENV{OA_LINK_DIR})
 
-add_library(cbag ${SRC_FILES_LIB_CBAG} ${SRC_FILES_LIB_CBAG_OA})
+#TODO: Find someone funded by developers of OA libraries to
+#      support keeping this option in the open source version
+#add_library(cbag ${SRC_FILES_LIB_CBAG} ${SRC_FILES_LIB_CBAG_OA})
+add_library(cbag ${SRC_FILES_LIB_CBAG})
 target_link_directories(cbag
   PUBLIC
   $ENV{OA_LINK_DIR}
